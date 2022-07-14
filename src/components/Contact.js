@@ -18,17 +18,17 @@ const Contact = () => {
 
                             <div className="col-md-6">
                                 <form action="">
-                                    <div classNam="mb-3">
-                                        <label for="Name" class="form-label">Your Name</label>
-                                        <input type="email" class="form-control" id="exampleFormControlInput1"  />
+                                    <div className="mb-3">
+                                        <label for="Name" className="form-label">Your Name</label>
+                                        <input type="email" className="form-control" id="exampleFormControlInput1"  />
                                     </div>
-                                    <div classNam="mb-3">
-                                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+                                    <div className="mb-3">
+                                        <label for="exampleFormControlInput1" className="form-label">Email address</label>
+                                        <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
                                     </div>
-                                    <div classNam="mb-3">
-                                        <label for="exampleFormControlTextarea1" class="form-label">Your Message</label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                                    <div className="mb-3">
+                                        <label for="exampleFormControlTextarea1" className="form-label">Your Message</label>
+                                        <textarea className="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
                                     </div>
                                     <button className='btn btn-outline-primary mt-5'>Send Message</button>
                                 </form>

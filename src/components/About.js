@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const About = () => {
     return (
         <div>
@@ -18,8 +19,7 @@ const About = () => {
                             to dispute resolution, litigation, employment, finance, company restructuring and tax. We also
                             work with non-profit organizations who may need legal services, especially in human rights related cases
                             <br />
-                            <button className="btn btn-primary rounded-pill px-4 py-2">Get started</button>
-                            <button className="btn btn-outline-primary rounded-pill px-4 py-2 ms-2">Contact Us</button>
+                           
                             </p>
                         </div>
                     </div>

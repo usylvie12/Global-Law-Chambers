@@ -13,7 +13,7 @@ function Request() {
 
 
     const createConsultation = () =>{
-        Axios.post("https://global-law-chambers.herokuapp.com/createConsultation", {
+        Axios.post("http://localhost:3001/createConsultation", {
             name,
             email,
             message,

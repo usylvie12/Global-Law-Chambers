@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 
 const About = () => {
     return (
@@ -19,7 +19,7 @@ const About = () => {
                             to dispute resolution, litigation, employment, finance, company restructuring and tax. We also
                             work with non-profit organizations who may need legal services, especially in human rights related cases
                             <br />
-                           
+                            <Link to="/detail" className="rounded-pill text-capitalize">Read more</Link> <br />
                             </p>
                         </div>
                     </div>

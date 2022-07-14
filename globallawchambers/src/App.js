@@ -6,7 +6,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Practice from './components/Practice';
 import Attorneys from './components/Attorneys';
-import Contact from './components/Contact';
+
 import Footer from './components/Footer';
 import Details from './components/Details';
 import Login from './components/Login';
@@ -28,7 +28,7 @@ const App = () => {
        <Route  path='/about' element={<About />} />
        <Route  path='/practice' element={<Practice />} />
        <Route  path='/attorneys' element={<Attorneys />} />
-       <Route  path='/contact' element={<Contact />} />
+       
        <Route  path='/register' element={<Register />} />
        <Route  path='/login' element={<Login />} />
        <Route  path='/detail' element={<Details />} />

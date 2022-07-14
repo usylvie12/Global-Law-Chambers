@@ -3,7 +3,7 @@ import React from 'react';
 import About from './About';
 import Practice from './Practice';
 import Attorneys from './Attorneys';
-import Contact from './Contact';
+
 import { Link } from 'react-router-dom';
 
 const Home = () => {
@@ -29,7 +29,7 @@ const Home = () => {
             <About/>
             <Practice/>
             <Attorneys/>
-            <Contact/>
+           
 
         </div>
     );

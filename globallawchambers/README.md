@@ -1,2 +1,2 @@
 ## Heroku link
-https://global-law-chambers.herokuapp.com/getConsultations
+https://lawchamber.herokuapp.com/

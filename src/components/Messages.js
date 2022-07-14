@@ -9,7 +9,7 @@ function Messages() {
 
     
     useEffect(() => {
-        Axios.get('http://localhost:3001/getConsultations').then((response) => {
+        Axios.get('https://global-law-chambers.herokuapp.com/getConsultations').then((response) => {
             setListOfConsultations(response.data);
         });
     }, []);

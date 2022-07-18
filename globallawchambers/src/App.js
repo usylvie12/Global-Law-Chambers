@@ -12,7 +12,7 @@ import Details from './components/Details';
 import Login from './components/Login';
 import Register from './components/Register';
 import Request from './components/Request';
-import Message from './components/Messages';
+import Contacts from './components/Contacts';
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -33,7 +33,7 @@ const App = () => {
        <Route  path='/login' element={<Login />} />
        <Route  path='/detail' element={<Details />} />
        <Route  path='/request' element={<Request />} />
-       <Route  path='/message' element={<Message />} />
+       <Route  path='/contacts' element={<Contacts />} />
        
        </Routes>
        <Footer/>

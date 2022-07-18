@@ -25,10 +25,13 @@ function Navbar() {
           <Link className="nav-link" to="/attorneys">Attorneys</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/request">Contact</Link>
+          <Link className="nav-link" to="/request">Message</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/message">Messages</Link>
+          <Link className="nav-link-register rounded-pill" to="/register">Register</Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link-login rounded-pill" to="/login">Login</Link>
         </li>
         
           </ul>
@@ -36,15 +39,7 @@ function Navbar() {
          
     
   </div>
-  <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-       
-  <li className="nav-item">
-          <Link className="nav-link-register rounded-pill" to="/register">Register</Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link-login rounded-pill" to="/login">Login</Link>
-        </li>
-        </ul>
+  
 </nav>
 
     </div>

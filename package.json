@@ -4,19 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build":"cd globallawchambers && npm run build",
-    "install-globallawchambers":"cd globallawchambers && npm install",
+    "build": "cd globallawchambers && npm run build",
+    "install-globallawchambers": "cd globallawchambers && npm install",
     "heroku-postbuild": "npm run install-globallawchambers and npm run build",
-    "start": "nodemon index.js"
+    "start": "node index.js",
+    "globallawchambers": "cd globallawchambers && npm start",
+    "dev": "concurrently -n 'server,globallawchambers' \"nodemon index.js\" \"npm run globallawchambers\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.27.2",
-    "cors": "^2.8.5",
+    "concurrently": "^7.2.2",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "mongoose": "^6.4.4",
+    "morgan": "^1.10.0",
     "nodemon": "^2.0.19"
   }
 }

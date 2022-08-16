@@ -1,7 +1,9 @@
 
 
 <div class="container my-5 py-5">
-                         <h2>Explain Your Ploblem</h2>
+                         <h2>We are here to help you</h2>
+                         <p>Include your Identity and Location</p>
+                         
     
                 
                     <div class="mb-3">
@@ -13,8 +15,9 @@
                         <input type="email" class="form-control"  placeholder="name@example.com" value="<%= request.email %>" name="email"  />
                     </div>
                     <div class="mb-3">
-                        <label for="Details" class="form-label"  >Details</label>
-                        <textarea class="form-control"  rows="5" value="<%= request.details %>" name="details" ></textarea>
+                        <label for="Details" class="form-label" >Details </label>
+                        
+                        <textarea class="form-control"  rows="5" value="<%= request.details %>" name="details" placeholder="Explain clearly your problem"></textarea>
                     </div>
                     <a href="/" class="cancel">Cancel</a>
 <button type="submit" class="btn-send">Send</button>

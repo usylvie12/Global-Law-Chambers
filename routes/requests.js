@@ -1,5 +1,4 @@
 const express = require('express')
-const request = require('../models/request')
 const router = express.Router()
 const Request = require('../models/request')
 
@@ -20,7 +19,7 @@ router.post('/', async (req,res) => {
     })
     try{
         const newRequest = await request.save()
-        res.redirect(`requests`)
+        res.redirect(`requests/${newRequest.id}`)
 
 
     } catch {
@@ -31,6 +30,24 @@ router.post('/', async (req,res) => {
 
     }
 })
-    
+router.get('/:id', async (req,res) => {
+    try{
+        const request = await Request.findById(req.params.id)
+        res.render('requests/message',{
+            request: request
+        })
+
+    } catch (err) {
+        console.log(err)
+        res.redirect('/')
+
+    }
+    res.render('requests/message')
+
+})
+
+router.delete('/:id',(req,res) => {
+    res.send('Delete Request' + req.params.id)
+})
 
 module.exports = router

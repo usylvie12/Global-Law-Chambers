@@ -9,13 +9,14 @@ const bodyParser = require ('body-parser')
 
 const indexRouter = require('./routes/index')
 const requestRouter = require('./routes/requests')
+const methodOverride = require('method-override')
  
 
 app.set('view engine', 'ejs')
 
 app.set('views', __dirname + '/views')
 
-
+app.use(methodOverride('_method'))
 app.use(express.static('public'))
 app.use(bodyParser.urlencoded({ limit: '10mb', extended: false }))
 

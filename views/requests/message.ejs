@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
     <title> Global Law Chambers | Homepage</title>
@@ -16,7 +16,7 @@
            
             <nav class="navbar navbar-expand-lg navbar-light  sticky-top ">
         <div class="container">
-      <a class="navbar-brand" href="#"><img src="images/logo.jpg" class="logo"></a>
+      <a class="navbar-brand" href="#"><img src="../images/logo.jpg" class="logo"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
       >
         <span class="navbar-toggler-icon"></span>
@@ -45,11 +45,9 @@
       
     </div>
     </nav>
-    <h3>Clients Messages</h3>
+    <h3>Your Message</h3>
     
-<% if (locals.requests != null) { %>
 
-<% requests.forEach(request => { %> 
     
     <div class="container">
        
@@ -62,13 +60,11 @@
 
 
 </div></div>
-<p class=""><a href="/requests/<%= request.id %> " class="rounded-pill text-capitalize ">Read More</a></p>
+
 
 
 </div>
-<%  }) %> 
 
-    <% } %> 
     <footer>
 
         <div class="container padding">

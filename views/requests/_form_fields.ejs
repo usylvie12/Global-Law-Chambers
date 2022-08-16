@@ -1,0 +1,24 @@
+
+
+<div class="container my-5 py-5">
+                         <h2>Explain Your Ploblem</h2>
+    
+                
+                    <div class="mb-3">
+                        <label for="Name" class="form-label">Title</label>
+                        <input type="text" class="form-control" value="<%= request.title %>" name="title"  />
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control"  placeholder="name@example.com" value="<%= request.email %>" name="email"  />
+                    </div>
+                    <div class="mb-3">
+                        <label for="Details" class="form-label"  >Details</label>
+                        <textarea class="form-control"  rows="5" value="<%= request.details %>" name="details" ></textarea>
+                    </div>
+                    <a href="/" class="cancel">Cancel</a>
+<button type="submit" class="btn-send">Send</button>
+            </div>
+        
+
+

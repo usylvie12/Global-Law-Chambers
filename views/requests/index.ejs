@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <title> Global Law Chambers | Homepage</title>
+  </head>
+  <body>
+    
+   
+           
+            <nav class="navbar navbar-expand-lg navbar-light  sticky-top ">
+        <div class="container">
+      <a class="navbar-brand" href="#"><img src="images/logo.jpg" class="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active text-uppercase">
+            <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item text-uppercase">
+            <a class="nav-link" href="/">about</a>
+          </li>
+         
+         
+            
+                <li class="nav-item text-uppercase">
+                    <a class="nav-link" href="/requests/new">Free Consultation</a>
+                  </li>
+                  <li class="nav-item text-uppercase">
+                    <a class="nav-link" href="#">Logout</a>
+                  </li>
+         </ul>
+      </div>
+    
+      
+    </div>
+    </nav>
+    <h3>Clients Messages</h3>
+    
+<% if (locals.requests != null) { %>
+
+<% requests.forEach(request => { %> 
+    
+    <div class="container">
+       
+    <div class="card mt-4">
+        <div class="card-body">
+    <h3 class="mb-1"><%= request.title  %>  </h3>
+    <hr>
+    <div class="card-subtitle text-muted mb-2"><%= request.email  %>  </div>
+    <div class="card-text mb-2"> <%= request.details %>  </div>
+
+    
+</div></div>
+</div>
+<%  }) %> 
+
+    <% } %> 
+    <footer>
+
+        <div class="container padding">
+          <div class="row padding">
+            <div class="col-md-4">
+              <h5>Contact Us</h5>
+              <hr >
+              <p><i class="fa fa-map-marker"></i>  KN 20 Ave,Kigali Rwanda </p>
+              <p><i class="fa fa-phone"> </i>  +250788827458/+250788716275</p>
+              <p><i class="fa fa-envelope"></i> info@globalawchambers.com</p>
+              <hr >
+             <P>
+              
+                 <a href=""><i class="fa fa-facebook"></i>  </a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
+              <a href=""> <i class="fa fa-twitter"></i></a>
+              
+              
+              
+              
+            </P>
+            </div>
+            <div class="col-md-4">
+                <h5>Open Time</h5>
+                <hr >
+                <p>Opening days:</p>
+                <p>Monday-Friday:8am-6pm</p>
+               
+              </div>
+              <div class="col-md-4">
+                  <h5>Client Services </h5>
+                  <hr >
+                 <ul>
+                   <li>Corporate and commercial legal Services</li>
+                   <li>Criminal Law and criminology</li>
+                  <li>Non-Governmental Organisations</li>
+                 </ul> 
+                 </div>
+                 <div class="col-12 text-center">
+                   <hr class="light">
+                   <p> &copy; Global Law Chambers-All Right Reserved</p>
+                 </div>
+          </div>
+        </div>
+      </footer>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" ></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+      </body>
+    </html>

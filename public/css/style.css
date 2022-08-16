@@ -1,0 +1,74 @@
+.logo{
+    height: 50px;
+    width: 60px;
+}
+
+#home{
+    height: 350px;
+    
+    background-color:#C0C0C0; 
+
+}
+#home a{
+    background-color: #6C5B7B;
+    color: #F7F7F7;
+    padding: 7px 25px 10px ;
+    margin-left: 40%;
+    text-decoration: none;
+   
+   }
+   .btn-send{
+    background-color: #6C5B7B;
+    color: #F7F7F7;
+    padding: 7px 25px 10px ;
+    
+   
+   }
+   .cancel{background-color:brown;
+    color: #F7F7F7;
+    padding: 7px 25px 10px ;
+text-decoration: none;
+}
+
+   .practices a{
+
+    background-color: #6C5B7B;
+    color: #F7F7F7;
+    padding: 7px 25px 10px ;
+    
+}
+.card-body a{
+
+    background-color: #6C5B7B;
+    color: #F7F7F7;
+    padding: 7px 25px 10px ;
+    
+    
+}
+
+
+
+.partner{
+    margin: 0 auto;
+    background-color:#eae7dc;
+
+}
+.navbar{
+    background-color:#eae7dc;
+}
+.card img{
+    height: 270px;}
+
+.partner img{
+    width: 150px;
+    height: 120px;
+    
+    
+}
+
+footer{
+    background-color: #6C5B7B;
+    color: #F7F7F7;
+}
+
+
